@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/generation_bridger/sw.js', { scope: '/generation_bridger/' })})}
