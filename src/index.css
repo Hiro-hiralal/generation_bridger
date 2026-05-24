@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply antialiased;
+    overscroll-behavior: none;
+  }
+
+  /* Ensure Devanagari text renders with correct font */
+  .devanagari {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+  }
+}
+
+@layer utilities {
+  .touch-target {
+    @apply min-h-[48px] min-w-[48px];
+  }
+
+  .touch-target-lg {
+    @apply min-h-[64px] min-w-[64px];
+  }
+}
